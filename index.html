@@ -7,12 +7,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <title>Portfolio</title>
+  <script defer src="script.js"></script>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/portfolio.svg" rel="icon">
+  <link href="/portfolio.svg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -402,10 +403,10 @@
             </div>
 
           </div>
-
+          
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="" method="post" id="submit-form">
+            <form onclick="return validate()" action="index.html" method="post" id="submit-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -421,7 +422,7 @@
                 <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
               </div>
 
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button  type="submit">Send Message</button></div>
             </form>
 
           </div>
